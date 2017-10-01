@@ -142,7 +142,7 @@ Si on la met en surbrillance, le `margin` apparaît en organge sur le block ci-d
 
 <kbd>![](images/layout-margin.png)</kbd>
 
-### Définir des tailles
+### Définir des marges
 
 On l'a vu, on peut définir des tailles coté par coté en CSS. Il existe aussi
 quatres écritures abrégées qui s'appliquent au `padding` et au `margin` :
@@ -157,5 +157,27 @@ quatres écritures abrégées qui s'appliquent au `padding` et au `margin` :
   margin: 10px 5px 20px;
   /* 4 valeurs différente (dans l'ordre: haut, droite, bas, gauche) */
   margin: 5px 10px 20px 10px;
+}
+```
+
+### Tailles fixes
+
+On peut fixer très simplement la taille d'une balise `block` en CSS :
+
+```css
+.alert {
+  width: 300px;
+  height: 300px;
+}
+```
+
+Parfois, on veut utiliser des valeurs minimales et maximales plutôt qu'une taille fixe :
+
+```css
+.alert {
+  /* la balise sera redimensionnable au dessus de 100px */
+  min-width: 100px;  
+  /* la balise sera redimensionnable au dessous de 700px */
+  max-width: 700px;
 }
 ```
