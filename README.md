@@ -96,6 +96,20 @@ possible de définir pour changer l'aspect d'une balise.
 
 <kbd>![](images/layout-sample.png)</kbd>
 
+### Type de balise
+
+En CSS, il y a principalement deux types de balise: `block` et `inline`.
+
+Les élément de type `inline` (span, a, strong, em, etc) ne sont jamais précédés ou suivis
+d'un saut de ligne. On les retrouve généralement dans un corps de texte. Leur taille ne peut
+être contraire.
+
+Les éléments de type `block` (div, header, p, h1, h2, etc) sont toujours précédés et suivis
+d'un saut de ligne. Par défaut, ils occupent toute la largeur de la page et peuvent contenir
+des marges, des bordures ainsi que des tailles fixes, minimale ou maximal.
+
+**Les indications qui suivent s'appliquent donc principalement aux éléments de type `block`.**
+
 ### La marge interne (padding)
 
 C'est la marge qui se situe à l'intérieur d'une balise, entre sa bordure et son contenu. En CSS, elle est définie à l'aide la propriété `padding`:
