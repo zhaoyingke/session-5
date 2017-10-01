@@ -1,5 +1,10 @@
 # session-5
 
+## Préparation
+
+- [ ] Forker ce projet dans votre espace personnel sur Github
+- [ ] Cloner le fork dans Github Desktop
+
 ## Aller plus loin avec les sélecteurs CSS
 
 Jusqu'à présent nous avons principalement utilisé des sélecteurs simple qui reflêtaient
@@ -80,5 +85,65 @@ Et en CSS pour désigner cet id, il faut préfixer son nom avec un `#` :
 ```css
 #mon-id {
   color: #EED151;
+}
+```
+
+## Taille et marges
+
+On l'a vu précédement, il est possible de spécifier la taille de certaines balises
+en CSS. Mais la hauteur et la largeur ne sont pas les seules propriétés qu'il est
+possible de définir pour changer l'aspect d'une balise.
+
+<kbd>![](images/layout-sample.png)</kbd>
+
+### La marge interne (padding)
+
+C'est la marge qui se situe à l'intérieur d'une balise, entre sa bordure et son contenu. En CSS, elle est définie à l'aide la propriété `padding`:
+
+```css
+.alert {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  /* ou en abrégé */
+  padding: 5px;
+}
+```
+
+Si on la met en surbrillance, le `padding` apparaît en jaune sur le block ci-dessous:
+
+<kbd>![](images/layout-padding.png)</kbd>
+
+### La marge externe (margin)
+
+C'est la marge qui se situe à l'extérieur d'une balise, après sa bordure? En CSS, elle est définie à l'aide la propriété `margin`:
+
+```css
+.alert {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+```
+
+Si on la met en surbrillance, le `margin` apparaît en organge sur le block ci-dessous:
+
+<kbd>![](images/layout-margin.png)</kbd>
+
+### Définir des tailles
+
+On l'a vu, on peut définir des tailles coté par coté en CSS. Il existe aussi
+quatres écritures abrégées qui s'appliquent au `padding` et au `margin` :
+
+```css
+.alert {
+  /* les 4 cotés en même temps avec la même valuer */
+  margin: 10px;
+  /* la même valeur verticale (5px), la même valeur horizontale (10px) */
+  margin: 5px 10px;
+  /* valeur en haut (10px), la même valeur horizontale (5px), valeur en bas (20px) */
+  margin: 10px 5px 20px;
+  /* 4 valeurs différente (dans l'ordre: haut, droite, bas, gauche) */
+  margin: 5px 10px 20px 10px;
 }
 ```
