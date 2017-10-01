@@ -60,4 +60,4 @@ Et enfin, un exemple plus complet :
 
 Ce qui nous donne:
 
-![](images/class.png)
+<kbd>![](images/class.png)</kbd>
