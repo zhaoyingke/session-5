@@ -2,7 +2,7 @@
 
 ## Aller plus loin avec les sélecteurs CSS
 
-Jusqu'à présent nous avons principalement utilisé des sélecteurs simple qui reflaient
+Jusqu'à présent nous avons principalement utilisé des sélecteurs simple qui reflêtaient
 la structure des balises de votre pages.
 
 ```css
@@ -14,7 +14,7 @@ header a { }
 h1, h2, h3, h4, h5, h6 { }
 ```
 
-Sauf que parfois, utiliser la structure de la page pour cibler des éléments ne suffit pas:
+Sauf que parfois, utiliser la structure de la page pour cibler des éléments ne suffit pas
 vous pouvez avoir besoin de styliser des éléments sans connaître leur context (ou leur parent).
 
 ### Les classes
@@ -46,7 +46,7 @@ Et enfin, un exemple plus complet :
     <style>
       /* Toutes les balises ayant la class `info` s'afficheront en blue */
       .info {
-        color: blue;
+        color: #3795C9;
       }
     </style>
   </head>
@@ -61,3 +61,24 @@ Et enfin, un exemple plus complet :
 Ce qui nous donne:
 
 <kbd>![](images/class.png)</kbd>
+
+### Les ids
+
+Ils ont un fonctionnement similaires aux classes mais servent à cibler un élément unique.
+`id` est d'ailleurs l'abréviation de `identifier` et en informatique, les identifiants sont
+par définission unique (attribué une seul fois). **Ça signifie qu'il est strictement
+interdit de donner le même `id` à plusieurs balises.**
+
+Pour donner à une blaise un `id` il suffit d'utiliser un attribut HTML :
+
+```html
+<span id="mon-id"></span>
+```
+
+Et en CSS pour désigner cet id, il faut préfixer son nom avec un `#` :
+
+```css
+#mon-id {
+  color: #EED151;
+}
+```
