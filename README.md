@@ -90,14 +90,6 @@ Et en CSS pour désigner cet id, il faut préfixer son nom avec un `#` :
 
 ## Taille et marges
 
-On l'a vu précédement, il est possible de spécifier la taille de certaines balises
-en CSS. Mais la hauteur et la largeur ne sont pas les seules propriétés qu'il est
-possible de définir pour changer l'aspect d'une balise.
-
-<kbd>![](images/layout-sample.png)</kbd>
-
-### Type de balise
-
 En CSS, il y a principalement deux types de balise: `block` et `inline`.
 
 Les élément de type `inline` (span, a, strong, em, etc) ne sont jamais précédés ou suivis
@@ -109,6 +101,12 @@ d'un saut de ligne. Par défaut, ils occupent toute la largeur de la page et peu
 des marges, des bordures ainsi que des tailles fixes, minimale ou maximal.
 
 **Les indications qui suivent s'appliquent donc principalement aux éléments de type `block`.**
+
+<kbd>![](images/layout-sample.png)</kbd>
+
+On l'a vu précédement, il est possible de spécifier la taille de certaines balises
+en CSS. Mais la hauteur et la largeur ne sont pas les seules propriétés qu'il est
+possible de définir pour changer l'aspect d'une balise.
 
 ### La marge interne (padding)
 
