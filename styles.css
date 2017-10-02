@@ -3,4 +3,26 @@ body {
 }
 
 #fixed-block {
+  position: fixed;
+  top:0;
+  left:0;
+  z-index: 100;
+}
+
+#footnotes {
+  position: absolute;
+  top:100%;
+}
+
+#with-offset {
+  position:relative;
+  top:-5px;
+}
+
+#floating-square {
+    width: 150px;
+    height: 150px;
+    margin-right:10px;
+    margin-bottom:10px;
+    float:left;
 }
