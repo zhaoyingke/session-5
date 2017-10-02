@@ -187,13 +187,13 @@ Parfois, on veut utiliser des valeurs minimales et maximales plutôt qu'une tail
 ### `static`
 
 C'est le positionnement par défaut des éléments en HTML. Les éléments sont affichés
-dans "le flow" c'est à dire les un à la suite des autres, à la ligne et en fonction
+dans "le flux" c'est à dire les un à la suite des autres, à la ligne et en fonction
 de leurs marges pour les balises de type block.
 
 ### `relative`
 
 Ce type de positionnement permet de déplacer un élément par rapport à sa position d'origine
-dans le flow. Contrairement à tous les autres types de positionnement, le positionnement
+dans le flux. Contrairement à tous les autres types de positionnement, le positionnement
 relatif ne déplacera pas les éléments qui entourent l'élément déplacé.
 Pour utiliser le positionnement `relatif` :
 
@@ -242,3 +242,33 @@ pas fixe. Pour utiliser le positionnement `absolute` :
 ```
 
 L'élément englobant est le premier parent de l'élément qui n'est pas défini en positionnement `static`.
+
+
+### Éléments flottants
+
+<kbd>![Images flottante à gauche](images/float.png)</kbd>
+
+Moins intuitifs, les éléments flottants sont pourtant très populaires dans la mise en
+forme de vos articles. La propriété `float` sert à indiquer que votre élément n'est
+plus positionné dans le flux pour être aligné sur les cotés (gauche ou droite). Pour
+utiliser le positionnement flottants:
+
+```css
+.alert {
+  /* L'élément va flotter à gauche */
+  float: left;
+  /* Avec un peut de marge sur les côtés pour plus de lisibilité */
+  margin-right:5px;
+  margin-bottom:5px;
+}
+```
+
+Tous les éléments ou textes qui suivent l'élément flottant à gauche seront donc décallé jusqu'à
+la faim de l'élément flottant. Si vous souhaitez que le contenus arrête d'être aligné par
+rapport à l'élément flottant, vous pouvez appliquer un `clear` pour que aller à la ligne:
+
+```css
+.mon-text {
+  clear:left;
+}
+```
