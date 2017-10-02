@@ -181,3 +181,64 @@ Parfois, on veut utiliser des valeurs minimales et maximales plutôt qu'une tail
   max-width: 700px;
 }
 ```
+
+## Positionner des éléments
+
+### `static`
+
+C'est le positionnement par défaut des éléments en HTML. Les éléments sont affichés
+dans "le flow" c'est à dire les un à la suite des autres, à la ligne et en fonction
+de leurs marges pour les balises de type block.
+
+### `relative`
+
+Ce type de positionnement permet de déplacer un élément par rapport à sa position d'origine
+dans le flow. Contrairement à tous les autres types de positionnement, le positionnement
+relatif ne déplacera pas les éléments qui entourent l'élément déplacé.
+Pour utiliser le positionnement `relatif` :
+
+```css
+.alert {
+  position: relative;
+  /* Les propriétés top ou bottom indiquent le décalage vertical à appliquer
+    et left ou right indiquent le décalage horizontal.  */
+  top: 10px;
+  left: 20px;
+}
+```
+
+### `fixed`
+
+Ce type de positionnement permet de déplacer un élément par rapport aux bords
+de la fenêtre. Cela signifie que lorsque votre page contient beaucoup de contenu
+et que vous utilisez la scrollbar, l'élément **restera fixé** au même endroit.
+Pour utiliser le positionnement `fixed` :
+
+```css
+.alert {
+  position: fixed;
+  /* Les propriétés top, bottom, right et left indiquent les distances entre les
+  bords de l'élément et les bords de la fenêtre.  */
+  top: 0px;
+  left: 0px;
+}
+```
+
+### `absolute`
+
+Ce type de positionnement est très similaire à `fixed`. Il vous permet de positionner
+un élément par rapport à **l'élément l'englobant**. Dans la plupart des cas, l'élément
+englobant est `<body>`. Cela signifie que si vous utilisez la scrollbar, l'élément ne sera
+pas fixe. Pour utiliser le positionnement `absolute` :
+
+```css
+.alert {
+  position: absolute;
+  /* Les propriétés top, bottom, right et left indiquent les distances entre les
+  bords de l'élément et l'élément l'englobant.  */
+  top: 0px;
+  left: 0px;
+}
+```
+
+L'élément englobant est le premier parent de l'élément qui n'est pas défini en positionnement `static`.
