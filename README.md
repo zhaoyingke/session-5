@@ -263,12 +263,12 @@ utiliser le positionnement flottants:
 }
 ```
 
-Tous les éléments ou textes qui suivent l'élément flottant à gauche seront donc décallé jusqu'à
-la faim de l'élément flottant. Si vous souhaitez que le contenus arrête d'être aligné par
-rapport à l'élément flottant, vous pouvez appliquer un `clear` pour que aller à la ligne:
+Tous les éléments ou textes qui suivent l'élément flottant à gauche seront donc décallés jusqu'à
+la fin de l'élément flottant. Si vous souhaitez que le contenu arrête d'être aligné par
+rapport à l'élément flottant, vous pouvez appliquer un `clear` pour aller à la ligne:
 
 ```css
-.mon-text {
+.mon-texte {
   clear:left;
 }
 ```
