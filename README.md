@@ -1,5 +1,7 @@
 # session-5
 
+Sélecteurs CSS, positionnements, tailles, marges, etc.
+
 ## Préparation
 
 - [ ] Forker ce projet dans votre espace personnel sur Github
@@ -228,8 +230,9 @@ Pour utiliser le positionnement `fixed` :
 
 Ce type de positionnement est très similaire à `fixed`. Il vous permet de positionner
 un élément par rapport à **l'élément l'englobant**. Dans la plupart des cas, l'élément
-englobant est `<body>`. Cela signifie que si vous utilisez la scrollbar, l'élément ne sera
-pas fixe. Pour utiliser le positionnement `absolute` :
+englobant est `<html>` qui a la même taille que la fenêtre par défaut.
+Cela signifie que si vous utilisez la scrollbar, l'élément ne sera pas fixe.
+Pour utiliser le positionnement `absolute` :
 
 ```css
 .alert {
@@ -243,6 +246,19 @@ pas fixe. Pour utiliser le positionnement `absolute` :
 
 L'élément englobant est le premier parent de l'élément qui n'est pas défini en positionnement `static`.
 
+### Ordre des éléments
+
+Par défaut en HTML, les éléments sont afficher les un sous les autres. Plus un élémént
+apparaît tard dans votre code, plus il sera positionné au sommet de la pile. Pour modifier
+ce comportement, il suffit d'utiliser n'importe quel positionnement non-statique
+et d'utiliser la propriété `z-index` sans unité. Plus la valeur est haute,
+plus l'élément apparaît au dessus :
+
+```css
+.alert {
+  z-index: 100;
+}
+```
 
 ### Éléments flottants
 
