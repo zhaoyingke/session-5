@@ -16,3 +16,19 @@ body {
 #anchor-1 {
 	color: #305ea8;
 }
+
+.alert-test{
+	padding-top:1.0rem;
+	padding-bottom: 1.0rem;
+	padding-left: .75rem;
+	padding-right: .75rem;
+	margin: 2.0rem 1.5rem 2.0rem 1.5rem;
+	width: 250px;
+	height: 120px;
+}
+
+.my-textbox{
+	position: absolute;
+	top: .50%;
+	left: 50%;
+}
